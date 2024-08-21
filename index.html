@@ -1,31 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <!-- font link -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-
-    <!-- daisy ui cdn -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- tailwind & daisy ui -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/44166c2135.js" crossorigin="anonymous"></script>
+    <!-- tailwind css configuration -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              pink: "#E7C1D3",
+              green: "#ABEF5F80",
+              fontFamily:{
+                Manrope: "Manrope",
+              },
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+   <header class="container mx-auto">
+    <nav>
 
-    <!-- tailwind script -->
-    
-    
-</head>
-<body>
-    <header>
 
-    </header>
-    <main>
+    </nav>
 
-    </main>
-    <footer>
 
-    </footer>
-</body>
+   </header>
+   <main class="container mx-auto">
+
+    <!-- banner section -->
+     <section class="my-6">
+        <div class="hero">
+            <div class="hero-content flex-col ">
+             <img src="./assets/banner.png" alt="">
+              <div>
+                <h1 class="text-3xl md:text-4xl lg:text-6xl font-bold text-center">A barn house of this design has a <br> striking appearance</h1>
+                <p class="py-6 text-center font-semibold text-gray-500">
+                    The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal <br> accents, and large windows that flood the space with natural light
+                </p>
+               <div class="text-center">
+                <button class="btn rounded-3xl bg-green text-xl font-bold ">View Details <i class="fa-solid fa-arrow-right bg-gray-800 rounded-full p-2 -rotate-45 text-white"></i></button>
+               </div>
+              </div>
+            </div>
+          </div>
+          
+
+     </section>
+
+   </main>
+   <footer>
+
+   </footer>
+  </body>
 </html>
